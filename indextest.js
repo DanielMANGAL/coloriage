@@ -38,7 +38,13 @@ function colorSquare(){
         }
 }
 function changeSize(input){
-    populateBoard(input)
+    console.log(input)
+    if(input> 1&& input<101){
+        document.getElementById("messageTaille").textContent=" "
+    populateBoard(input)}
+    else{
+        document.getElementById("messageTaille").innerHTML="Vous devez choisir une taille entre 2 et 100"
+    }
 }
 function modeColoring(){
     
